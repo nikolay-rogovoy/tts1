@@ -1,0 +1,16 @@
+{
+    "name": "tts1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "start2": "node service-error.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "socket.io": "^2.1.0"
+    }
+}
