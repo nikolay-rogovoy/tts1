@@ -4,13 +4,23 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "node index.js",
-        "start2": "node service-error.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "npm run build && cd dist && node app.js",
+        "tsc": "tsc",
+        "tsc-w": "tsc -w",
+        "build": "npm run tsc && node tools/copy.js"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "socket.io": "^2.1.0"
+        "body-parser": "^1.18.2",
+        "express": "^4.16.3",
+        "jsonwebtoken": "^8.2.1",
+        "rxjs": "^5.5.10",
+        "socket.io": "^2.1.0",
+        "typescript": "2.6.2"
+    },
+    "devDependencies": {
+        "concurrently": "^3.5.1",
+        "mkdirp": "^0.5.1"
     }
 }
